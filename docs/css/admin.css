@@ -1,0 +1,228 @@
+/* === Admin Auth === */
+.admin-auth {
+  max-width: 600px;
+}
+
+.auth-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.auth-row input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-row input:focus {
+  border-color: var(--color-primary);
+}
+
+.auth-status {
+  font-size: 0.85rem;
+  min-height: 1.4em;
+}
+
+.auth-status.ok { color: #3aaa6e; }
+.auth-status.err { color: #e05252; }
+
+.auth-help {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.auth-help summary {
+  cursor: pointer;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.auth-help ol {
+  margin: 0.5rem 0 0 1.25rem;
+  line-height: 1.8;
+}
+
+.auth-help code {
+  background: var(--color-bg-alt);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* === Buttons === */
+.btn {
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-bg);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--color-bg-alt);
+  border-color: var(--color-primary);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn--small {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* === File Tabs === */
+.file-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.file-tab {
+  padding: 0.45rem 1rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 8px 8px 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.file-tab:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.file-tab.active {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  border-bottom-color: var(--color-bg);
+}
+
+.file-tab.modified::after {
+  content: ' *';
+  color: #e5953a;
+}
+
+/* === Editor === */
+.editor-area {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.editor-filename {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.editor-status {
+  padding: 0;
+  font-size: 0.8rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  max-height: 0;
+}
+
+.editor-status.show {
+  padding: 0.5rem 1rem;
+  max-height: 100px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.editor-status.ok { background: #edf7f0; color: #2d7a4a; }
+.editor-status.err { background: #fef2f2; color: #c53030; }
+.editor-status.info { background: var(--color-primary-light); color: var(--color-primary-dark); }
+
+#json-editor {
+  width: 100%;
+  min-height: 500px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  tab-size: 2;
+}
+
+.editor-meta {
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .editor-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .editor-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  #json-editor {
+    min-height: 350px;
+    font-size: 0.78rem;
+  }
+}
