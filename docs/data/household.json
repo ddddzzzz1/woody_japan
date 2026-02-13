@@ -1,0 +1,57 @@
+{
+  "source": "e-Stat 가계조사 단신세대 & 2인 이상 세대",
+  "year": 2024,
+  "single": {
+    "totalExpense": 169547,
+    "avgAge": 58.7,
+    "workerAge": 43.5,
+    "unemployedAge": 75.2,
+    "engelCoeff": 25.9,
+    "categories": [
+      { "name": "식료 (食料)",           "amount": 43941, "share": 25.9, "yoy": 0.2 },
+      { "name": "주거 (住居)",           "amount": 23372, "share": 13.8, "yoy": -3.6 },
+      { "name": "교통/통신 (交通・通信)", "amount": 20418, "share": 12.0, "yoy": -7.2 },
+      { "name": "교양/오락 (教養娯楽)",   "amount": 19519, "share": 11.5, "yoy": -1.4 },
+      { "name": "광열수도 (光熱・水道)",   "amount": 12816, "share": 7.6,  "yoy": -5.6 },
+      { "name": "보건의료 (保健医療)",     "amount": 8501,  "share": 5.0,  "yoy": null },
+      { "name": "가구/가사용품",          "amount": 5937,  "share": 3.5,  "yoy": null },
+      { "name": "의류/신발 (被服及び履物)", "amount": 5175,  "share": 3.1,  "yoy": null },
+      { "name": "교육 (教育)",            "amount": 9,     "share": 0.0,  "yoy": null },
+      { "name": "기타 (その他)",          "amount": 29859, "share": 17.6, "yoy": null }
+    ],
+    "workerIncome": {
+      "realIncome": 370247,
+      "realIncomeYoy": 0.2,
+      "laborIncome": 347405,
+      "salary": 283068,
+      "bonus": 60634
+    }
+  },
+  "multi": {
+    "totalExpense": 300243,
+    "avgMembers": 2.88,
+    "headAge": 60.4,
+    "engelCoeff": 28.3,
+    "categories": [
+      { "name": "식료 (食料)",           "amount": 85040, "share": 28.3 },
+      { "name": "기타 (その他)",          "amount": 54132, "share": 18.0 },
+      { "name": "교통/통신 (交通・通信)", "amount": 41588, "share": 13.9 },
+      { "name": "교양/오락 (教養娯楽)",   "amount": 29098, "share": 9.7 },
+      { "name": "광열수도 (光熱・水道)",   "amount": 23110, "share": 7.7 },
+      { "name": "주거 (住居)",           "amount": 18088, "share": 6.0 },
+      { "name": "보건의료 (保健医療)",     "amount": 15478, "share": 5.2 },
+      { "name": "가구/가사용품",          "amount": 12564, "share": 4.2 },
+      { "name": "의류/신발",             "amount": 11131, "share": 3.7 },
+      { "name": "교육 (教育)",            "amount": 10498, "share": 3.5 }
+    ],
+    "workerIncome": 636155,
+    "workerExpense": 325137
+  },
+  "flash2025": {
+    "multiExpense": 314001,
+    "multiNominalYoy": 4.6,
+    "multiRealYoy": 0.9,
+    "workerExpense": 346297,
+    "workerIncome": 653901
+  }
+}

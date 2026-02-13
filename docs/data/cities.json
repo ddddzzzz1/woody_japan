@@ -1,0 +1,57 @@
+{
+  "source": "Numbeo 크라우드소싱 데이터",
+  "asOf": "2026.2",
+  "cityOrder": ["도쿄", "오사카", "나고야", "후쿠오카", "삿포로"],
+  "rent": {
+    "columns": ["도시", "1BR 시내", "1BR 외곽", "3BR 시내", "3BR 외곽"],
+    "data": [
+      { "city": "도쿄",     "center1br": 184084, "suburb1br": 101867, "center3br": 331381, "suburb3br": 195095 },
+      { "city": "오사카",   "center1br": 112000, "suburb1br": 84000,  "center3br": 259600, "suburb3br": 126056 },
+      { "city": "나고야",   "center1br": 82920,  "suburb1br": 55800,  "center3br": 211333, "suburb3br": 123333 },
+      { "city": "후쿠오카", "center1br": 84278,  "suburb1br": 52100,  "center3br": 166667, "suburb3br": 106667 },
+      { "city": "삿포로",   "center1br": 72000,  "suburb1br": 44000,  "center3br": 130000, "suburb3br": 100000 }
+    ],
+    "nationalAvg": { "center1br": 87447, "suburb1br": 57588, "center3br": 202121, "suburb3br": 116927 }
+  },
+  "utilities": {
+    "columns": ["도시", "기본 유틸리티", "인터넷", "모바일"],
+    "note": "월, 85m² 기준",
+    "data": [
+      { "city": "도쿄",     "basic": 24795, "internet": 4694, "mobile": 3682 },
+      { "city": "오사카",   "basic": 20646, "internet": 4325, "mobile": 3267 },
+      { "city": "나고야",   "basic": 18333, "internet": 4925, "mobile": 3710 },
+      { "city": "후쿠오카", "basic": 31286, "internet": 5155, "mobile": 3920 },
+      { "city": "삿포로",   "basic": 53126, "internet": 7500, "mobile": 4080 }
+    ],
+    "nationalAvg": { "basic": 24875, "internet": 5171, "mobile": 3890 }
+  },
+  "transport": {
+    "data": [
+      { "city": "도쿄",     "monthlyPass": 12000, "oneWay": 210 },
+      { "city": "나고야",   "monthlyPass": 10000, "oneWay": 255 },
+      { "city": "삿포로",   "monthlyPass": 7500,  "oneWay": 250 },
+      { "city": "후쿠오카", "monthlyPass": 6085,  "oneWay": 280 },
+      { "city": "오사카",   "monthlyPass": 5150,  "oneWay": 240 }
+    ],
+    "nationalAvg": { "monthlyPass": 8252, "oneWay": 225 }
+  },
+  "dining": {
+    "items": ["저렴한 식당 1인", "중급 레스토랑 2인", "맥도날드 세트"],
+    "data": {
+      "도쿄":     [1175, 6550, 800],
+      "오사카":   [1000, 5000, 700],
+      "나고야":   [1250, 5000, 800],
+      "후쿠오카": [1250, 8000, 850],
+      "삿포로":   [815,  4500, 850],
+      "전국 평균": [1000, 5250, 800]
+    }
+  },
+  "salary": [
+    { "city": "도쿄",     "netMonthly": 408799 },
+    { "city": "오사카",   "netMonthly": 324141 },
+    { "city": "나고야",   "netMonthly": 290146 },
+    { "city": "삿포로",   "netMonthly": 253719 },
+    { "city": "후쿠오카", "netMonthly": 249390 }
+  ],
+  "salaryNationalAvg": 311848
+}

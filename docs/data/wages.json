@@ -1,0 +1,22 @@
+{
+  "source": "후생노동성 임금구조기본통계조사 (10인 이상 사업체, 민간)",
+  "year": 2024,
+  "overall": {
+    "monthlySalary": 330400,
+    "annualBonus": 954700,
+    "annualTotal": 4919500
+  },
+  "gender": [
+    { "label": "남성", "monthlySalary": 363100, "ratio": 100 },
+    { "label": "여성", "monthlySalary": 275300, "ratio": 75.8 }
+  ],
+  "companySize": [
+    { "label": "대기업 (1,000명+)",  "monthlySalary": 364500, "annualBonus": 1271800 },
+    { "label": "중기업 (100~999명)", "monthlySalary": 323100, "annualBonus": 919400 },
+    { "label": "소기업 (10~99명)",   "monthlySalary": 299300, "annualBonus": 622900 }
+  ],
+  "agePeak": {
+    "male":   { "ageRange": "55~59세", "amount": 444100 },
+    "female": { "ageRange": "45~49세", "amount": 298000 }
+  }
+}

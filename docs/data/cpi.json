@@ -1,0 +1,32 @@
+{
+  "source": "총무성 CPI (2020년 = 100)",
+  "year": 2024,
+  "annual": [
+    { "category": "총합 (General)",              "index": 108.5, "yoy": 2.7, "highlight": true },
+    { "category": "총합 (생선식품 제외)",          "index": 107.9, "yoy": 2.6 },
+    { "category": "총합 (Core Core)",             "index": 107.0, "yoy": 2.4 },
+    { "category": "식료",                         "index": null,  "yoy": 4.3 },
+    { "category": "생선식품",                      "index": null,  "yoy": 7.0 },
+    { "category": "에너지",                        "index": null,  "yoy": 3.8 },
+    { "category": "주거",                          "index": null,  "yoy": 0.5 },
+    { "category": "교육",                          "index": null,  "yoy": -0.4 },
+    { "category": "교양/오락",                     "index": null,  "yoy": 5.4 }
+  ],
+  "monthly": [
+    { "month": "1월",    "yoy": 2.2, "note": "에너지 보조금 효과" },
+    { "month": "4월",    "yoy": 2.5, "note": "" },
+    { "month": "7~8월",  "yoy": 2.8, "note": "에너지 보조금 종료 (에너지 +12.0%)" },
+    { "month": "12월",   "yoy": 3.6, "note": "연말 가속" }
+  ],
+  "surging": [
+    { "item": "과일",          "yoy": 10.7 },
+    { "item": "채소",          "yoy": 8.6 },
+    { "item": "곡류",          "yoy": 8.5 },
+    { "item": "전기요금",      "yoy": 7.4 },
+    { "item": "생선식품 전체", "yoy": 7.0 }
+  ],
+  "chartData": {
+    "labels": ["과일", "채소", "곡류", "전기요금", "생선식품", "교양/오락", "식료 전체", "에너지", "총합", "주거", "교육"],
+    "values": [10.7, 8.6, 8.5, 7.4, 7.0, 5.4, 4.3, 3.8, 2.7, 0.5, -0.4]
+  }
+}
