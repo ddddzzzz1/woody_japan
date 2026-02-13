@@ -1,0 +1,48 @@
+{
+  "initialCosts": {
+    "description": "일본 렌트 초기 비용 (도쿄 1R/1K 기준)",
+    "items": [
+      { "name": "시키킨 (敷金)", "amount": "월세 1~2개월", "note": "보증금. 퇴거 시 수리비 차감 후 반환", "refundable": true },
+      { "name": "레이킨 (礼金)", "amount": "월세 0~1개월", "note": "집주인에게 주는 사례금. 반환 없음", "refundable": false },
+      { "name": "중개수수료 (仲介手数料)", "amount": "월세 0.5~1개월", "note": "부동산 중개업소에 지불", "refundable": false },
+      { "name": "첫 달 월세", "amount": "월세 1개월", "note": "입주 시점에 따라 일할 계산", "refundable": false },
+      { "name": "보증회사 (保証会社)", "amount": "월세 0.5~1개월", "note": "연대보증인 대신. 매년 갱신료 있음", "refundable": false },
+      { "name": "화재보험 (火災保険)", "amount": "1.5~2만엔", "note": "2년 계약, 필수 가입", "refundable": false },
+      { "name": "열쇠 교환 (鍵交換)", "amount": "1~2만엔", "note": "입주 전 열쇠 교체 비용", "refundable": false }
+    ],
+    "example": {
+      "rent": 70000,
+      "totalMin": 280000,
+      "totalMax": 420000,
+      "note": "월세 7만엔 기준 → 초기 비용 약 28~42만엔 (4~6개월분)"
+    }
+  },
+  "contractProcess": [
+    { "step": 1, "title": "물건 검색", "desc": "SUUMO, Homes.co.jp, 또는 부동산 중개소 방문", "tip": "역에서 도보 10분 이내가 인기" },
+    { "step": 2, "title": "내견 (内見)", "desc": "실제 방문해서 확인. 수도/전기 상태, 소음, 일조량 체크", "tip": "평일 낮+주말 저녁 2번 보면 좋음" },
+    { "step": 3, "title": "입주 신청 (入居申込)", "desc": "신청서 작성 + 재직증명서/수입증명 제출", "tip": "월수입이 월세의 3배 이상이 기준" },
+    { "step": 4, "title": "심사 (審査)", "desc": "보증회사 + 관리회사 심사. 보통 3~7일 소요", "tip": "전화 확인이 올 수 있으니 받을 것" },
+    { "step": 5, "title": "계약 (契約)", "desc": "중요사항 설명(重要事項説明) 후 계약서 서명. 초기 비용 지불", "tip": "퇴거 시 원상복구 범위를 반드시 확인" },
+    { "step": 6, "title": "입주", "desc": "열쇠 수령 후 입주. 전기/가스/수도 개통 신청", "tip": "입주 직후 방 전체 사진 촬영(퇴거 시 분쟁 방지)" }
+  ],
+  "renewal": {
+    "period": "2년마다",
+    "fee": "월세 1개월분 (갱신료/更新料)",
+    "note": "갱신 시 화재보험도 재가입. 관서 지방은 갱신료 없는 경우도 있음"
+  },
+  "tips": [
+    "ゼロゼロ物件(0-0 물건): 시키킨/레이킨 없는 물건. 초기 비용 대폭 절약",
+    "フリーレント: 1~2개월 월세 무료 물건. 비수기(6~8월)에 많음",
+    "갱신료(更新料): 2년마다 월세 1개월분 — 계약 전 반드시 확인",
+    "퇴거 시 원상복구 비용에 주의. 입주 시 사진 촬영 필수",
+    "외국인可(外国人可) 필터로 검색하면 시간 절약",
+    "UR 공단주택: 보증인/레이킨 불요, 갱신료 없음. 외국인에게 유리"
+  ],
+  "sites": [
+    { "name": "SUUMO", "url": "https://suumo.jp", "desc": "일본 최대 부동산 검색 사이트" },
+    { "name": "Homes.co.jp", "url": "https://www.homes.co.jp", "desc": "상세 필터, 가격 상한 검색" },
+    { "name": "UR都市機構", "url": "https://www.ur-net.go.jp", "desc": "보증인/레이킨/갱신료 불요 공단주택" },
+    { "name": "GaijinPot", "url": "https://apartments.gaijinpot.com", "desc": "외국인 특화, 영어 지원" },
+    { "name": "Real Estate Japan", "url": "https://realestate.co.jp", "desc": "영어/중국어 지원" }
+  ]
+}

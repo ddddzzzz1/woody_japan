@@ -32,37 +32,74 @@
   <!-- Page Header -->
   <div class="container">
     <div class="page-header">
-      <h1>🏠 Living</h1>
-      <p>일본에서 살기 위해 필요한 실생활 정보 — 렌트, 음식, 유틸리티, 비자 등</p>
+      <h1>🏠 Living in Japan</h1>
+      <p>일본 생활에 필요한 실전 가이드 — 렌트, 음식, 유틸리티, 은행, 보험, 교통</p>
+      <span class="badge">데이터 + 실전 가이드</span>
     </div>
   </div>
 
-  <!-- Content -->
+  <!-- Section 1: 렌트/주거 -->
   <section class="section">
     <div class="container">
-      <div class="placeholder">
-        <div class="placeholder__icon">🚧</div>
-        <h2>준비 중입니다</h2>
-        <p>렌트 계약, 음식/장보기, 유틸리티 설정, 은행 계좌 개설, 건강보험 등<br>일본 생활에 필요한 실전 정보를 정리할 예정입니다.</p>
+      <div class="content-section">
+        <h2>1. 렌트/주거 (賃貸)</h2>
+        <p>초기 비용, 계약 절차, 갱신, 부동산 사이트</p>
+        <div id="section-rent"></div>
       </div>
+    </div>
+  </section>
 
-      <div style="margin-top: 3rem;">
-        <h3>예정 콘텐츠</h3>
-        <div class="table-wrap" style="margin-top: 1rem;">
-          <table>
-            <thead>
-              <tr><th>주제</th><th>내용</th><th>상태</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>렌트/주거</td><td>초기 비용, 보증금, 계약 절차, 부동산 사이트</td><td><span class="badge">예정</span></td></tr>
-              <tr><td>음식/장보기</td><td>슈퍼마켓 비교, 절약 팁, 외식 가이드</td><td><span class="badge">예정</span></td></tr>
-              <tr><td>유틸리티</td><td>전기/가스/수도 개통, 인터넷 계약</td><td><span class="badge">예정</span></td></tr>
-              <tr><td>은행/금융</td><td>계좌 개설, 신용카드, 송금</td><td><span class="badge">예정</span></td></tr>
-              <tr><td>건강보험</td><td>국민건강보험, 사회보험 차이</td><td><span class="badge">예정</span></td></tr>
-              <tr><td>교통</td><td>정기권, IC카드, 자전거</td><td><span class="badge">예정</span></td></tr>
-            </tbody>
-          </table>
-        </div>
+  <!-- Section 2: 음식/장보기 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="content-section">
+        <h2>2. 음식/장보기 (食費)</h2>
+        <p>슈퍼마켓, 가격 비교, 월 식비, 외식 가이드</p>
+        <div id="section-food"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: 유틸리티 -->
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <h2>3. 유틸리티/통신 (光熱費・通信)</h2>
+        <p>전기/가스/수도 개통, 인터넷, 모바일 통신</p>
+        <div id="section-utilities"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: 은행/금융 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="content-section">
+        <h2>4. 은행/금융 (銀行・金融)</h2>
+        <p>계좌 개설, 은행 비교, 해외 송금, 캐시리스 결제</p>
+        <div id="section-banking"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: 건강보험/의료 -->
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <h2>5. 건강보험/의료 (健康保険・医療)</h2>
+        <p>국민건강보험 vs 사회보험, 의료비, 연금 제도</p>
+        <div id="section-insurance"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: 교통 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="content-section">
+        <h2>6. 교통 (交通)</h2>
+        <p>IC카드, 정기권, 자전거, 택시</p>
+        <div id="section-transport"></div>
       </div>
     </div>
   </section>
@@ -70,10 +107,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>Woody's Japan Insights &mdash; Data sourced from e-Stat, Numbeo, and official Japanese government statistics.</p>
+      <p>Woody's Japan Insights &mdash; 일본 생활 실전 가이드. 경험과 공식 자료 기반.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/living-renderer.js"></script>
 </body>
 </html>

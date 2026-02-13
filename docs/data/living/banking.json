@@ -1,0 +1,47 @@
+{
+  "accountOpening": {
+    "requirements": [
+      "재류카드 (在留カード)",
+      "여권 (パスポート)",
+      "인감 또는 서명 (은행별 상이)",
+      "일본 내 주소 (주민등록 완료 후)",
+      "전화번호 (일본 번호)"
+    ],
+    "timing": "입국 → 구약소에서 주민등록(住民届) → 바로 신청 가능. 일부 은행은 6개월 거주 요건",
+    "steps": [
+      { "step": 1, "title": "주민등록 (住民届)", "desc": "구약소(区役所/市役所)에서 전입신고. 재류카드에 주소 기재", "tip": "입국 14일 이내 신고 의무" },
+      { "step": 2, "title": "은행 방문 또는 온라인 신청", "desc": "재류카드 + 여권 지참하고 지점 방문, 또는 앱으로 계좌 개설", "tip": "ゆうちょ銀行이 가장 개설 쉬움" },
+      { "step": 3, "title": "통장/카드 수령", "desc": "통장은 당일 발급. 캐시카드(현금카드)는 1~2주 후 우편 수령", "tip": "캐시카드 없어도 통장으로 ATM 이용 가능" }
+    ]
+  },
+  "banks": [
+    { "name": "ゆうちょ銀行", "english": "Japan Post Bank", "pros": "전국 ATM 최다 (24,000+), 개설 쉬움, 입국 직후 가능", "cons": "인터넷 뱅킹 UI 다소 구식", "foreignerFriendly": 5, "recommended": true },
+    { "name": "三菱UFJ銀行", "english": "MUFG Bank", "pros": "최대 메가뱅크, 기업 급여계좌 많음", "cons": "외국인 개설 까다로울 수 있음", "foreignerFriendly": 3, "recommended": false },
+    { "name": "三井住友銀行", "english": "SMBC", "pros": "Olive 앱 현대적, 캐시리스 강화", "cons": "6개월 거주 요건 있을 수 있음", "foreignerFriendly": 3, "recommended": false },
+    { "name": "楽天銀行", "english": "Rakuten Bank", "pros": "온라인 전용, 수수료 무료 혜택, 금리 높음", "cons": "실물 지점 없음", "foreignerFriendly": 4, "recommended": false },
+    { "name": "Sony銀行", "english": "Sony Bank", "pros": "외화 계좌 11통화, 해외 송금 저렴, Sony Bank WALLET(Visa 데빗)", "cons": "온라인 전용", "foreignerFriendly": 4, "recommended": false }
+  ],
+  "remittance": [
+    { "name": "Wise (구 TransferWise)", "fee": "저렴 (0.5~1%)", "speed": "1~2영업일", "note": "환율 최고, 앱 편리. 해외 송금 시 가장 추천", "recommended": true },
+    { "name": "은행 해외송금", "fee": "3,000~7,500엔/건", "speed": "2~5영업일", "note": "비쌈. 중간 은행 수수료(中継銀行手数料) 추가 가능", "recommended": false },
+    { "name": "PayPay", "fee": "무료 (국내)", "speed": "즉시", "note": "국내 개인 간 송금. 일본 생활 필수 앱", "recommended": false },
+    { "name": "Western Union", "fee": "중간", "speed": "즉시~1일", "note": "현금 수령 가능. 은행 계좌 불요", "recommended": false }
+  ],
+  "cashless": {
+    "description": "일본 캐시리스 결제 (2024년 보급률 약 40%)",
+    "services": [
+      { "name": "PayPay", "type": "QR결제", "share": "1위", "note": "가맹점 최다. 일본 생활 필수" },
+      { "name": "Suica/PASMO", "type": "IC카드/NFC", "share": "교통+결제", "note": "교통카드 겸 전자머니" },
+      { "name": "楽天ペイ", "type": "QR결제", "share": "2위권", "note": "楽天 포인트 연동" },
+      { "name": "iD/QUICPay", "type": "NFC", "share": "신용카드 연동", "note": "Apple Pay/Google Pay로 터치 결제" }
+    ]
+  },
+  "tips": [
+    "급여 계좌는 회사 지정 은행이 있을 수 있으니 입사 전 확인",
+    "コンビニATM(편의점 ATM): 시간대별 수수료 주의 — 평일 주간 무료인 경우 많음",
+    "인감(ハンコ): 100엔샵에서 구매 가능. 은행용은 三文判 이상 권장",
+    "마이넘버카드(マイナンバーカード): 은행 계좌 연동 의무화 추진 중. 조기 취득 권장",
+    "해외 신용카드(Visa/Master)는 대부분 사용 가능. 단, 현금만 받는 가게도 아직 있음",
+    "PayPay 앱은 도착 직후 설치 추천. 소규모 음식점/상점에서 필수적"
+  ]
+}
