@@ -1,0 +1,56 @@
+Category,Item,Price (JPY),Range Low (JPY),Range High (JPY)
+Restaurants,Meal at an Inexpensive Restaurant,1000.00,650.00,1600.00
+Restaurants,"Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",5250.00,3500.00,12000.00
+Restaurants,Combo Meal at McDonald's (or Equivalent Fast-Food Meal),800.00,700.00,900.00
+Restaurants,Domestic Draft Beer (0.5 Liter),500.00,250.00,750.00
+Restaurants,Imported Beer (0.33 Liter Bottle),600.00,350.00,1000.00
+Restaurants,Cappuccino (Regular Size),485.38,210.00,800.00
+Restaurants,"Soft Drink (Coca-Cola or Pepsi, 0.33 Liter Bottle)",166.82,120.00,350.00
+Restaurants,Bottled Water (0.33 Liter),116.00,100.00,180.00
+Markets,"Milk (Regular, 1 Liter)",225.77,175.00,300.00
+Markets,Fresh White Bread (500 g Loaf),221.66,130.00,500.00
+Markets,White Rice (1 kg),737.51,350.00,1000.00
+Markets,"Eggs (12, Large Size)",322.72,237.60,408.00
+Markets,Local Cheese (1 kg),1728.62,800.00,3300.00
+Markets,Chicken Fillets (1 kg),1004.11,500.00,1500.00
+Markets,Beef Round or Equivalent Back Leg Red Meat (1 kg),2819.48,1280.00,5000.00
+Markets,Apples (1 kg),771.38,345.00,1433.00
+Markets,Bananas (1 kg),388.99,200.00,800.00
+Markets,Oranges (1 kg),674.34,250.00,1500.00
+Markets,Tomatoes (1 kg),683.09,324.00,1200.00
+Markets,Potatoes (1 kg),417.74,200.00,760.00
+Markets,Onions (1 kg),407.37,200.00,800.00
+Markets,Lettuce (1 Head),200.84,105.00,320.00
+Markets,Bottled Water (1.5 Liter),135.13,80.00,200.00
+Markets,Bottle of Wine (Mid-Range),1400.00,700.00,3000.00
+Markets,Domestic Beer (0.5 Liter Bottle),310.94,200.00,500.00
+Markets,Imported Beer (0.33 Liter Bottle),410.68,250.00,600.00
+Markets,"Cigarettes (Pack of 20, Marlboro)",620.00,580.00,700.00
+Transportation,One-Way Ticket (Local Transport),225.00,190.00,400.00
+Transportation,Monthly Public Transport Pass (Regular Price),8251.67,5000.00,17600.00
+Transportation,Taxi Start (Standard Tariff),585.00,500.00,700.00
+Transportation,Taxi 1 km (Standard Tariff),485.00,263.00,700.00
+Transportation,Taxi 1 Hour Waiting (Standard Tariff),3099.90,2560.00,5000.00
+Transportation,Gasoline (1 Liter),173.89,160.00,180.00
+Transportation,Volkswagen Golf 1.5 (or Equivalent New Compact Car),3434000.00,3342000.00,3434000.00
+Transportation,Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car),2443690.48,2279200.00,2800000.00
+Utilities (Monthly),"Basic Utilities for 85 m2 Apartment (Electricity, Heating, Cooling, Water, Garbage)",24874.63,15000.00,42500.00
+Utilities (Monthly),"Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",3890.20,2000.00,6300.00
+Utilities (Monthly),"Broadband Internet (Unlimited Data, 60 Mbps or Higher)",5171.46,4000.00,8000.00
+Sports And Leisure,Monthly Fitness Club Membership,8543.31,5000.00,12650.00
+Sports And Leisure,"Tennis Court Rental (1 Hour, Weekend)",2971.43,1000.00,5500.00
+Sports And Leisure,Cinema Ticket (International Release),1900.00,1700.00,2500.00
+Childcare,"Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",83674.96,35000.00,204166.00
+Childcare,"International Primary School, Annual Tuition per Child",1921666.06,1000000.00,3000000.00
+Clothing And Shoes,Jeans (Levi's 501 or Similar),6773.42,3000.00,11000.00
+Clothing And Shoes,Summer Dress in a Chain Store (e.g. Zara or H&M),4573.25,2000.00,9000.00
+Clothing And Shoes,Nike Running Shoes (Mid-Range),8960.17,5500.00,12000.00
+Clothing And Shoes,Men's Leather Business Shoes,12805.77,5300.00,20000.00
+Rent Per Month,1 Bedroom Apartment in City Centre,87447.17,56000.00,200000.00
+Rent Per Month,1 Bedroom Apartment Outside of City Centre,57587.67,40000.00,101866.67
+Rent Per Month,3 Bedroom Apartment in City Centre,202121.47,100000.00,400000.00
+Rent Per Month,3 Bedroom Apartment Outside of City Centre,116926.55,70000.00,230000.00
+Buy Apartment Price,Price per Square Meter to Buy Apartment in City Centre,959095.36,390000.00,1755000.00
+Buy Apartment Price,Price per Square Meter to Buy Apartment Outside of Centre,484208.29,250000.00,1000000.00
+Salaries And Financing,Average Monthly Net Salary (After Tax),311847.97,,
+Salaries And Financing,"Annual Mortgage Interest Rate (20-Year Fixed, in %)",1.97,1.00,2.45

@@ -1,0 +1,53 @@
+Category,Item,Price (JPY),Range Low (JPY),Range High (JPY)
+Restaurants,Meal at an Inexpensive Restaurant,815.00,500.00,2000.00
+Restaurants,"Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",4500.00,3000.00,5000.00
+Restaurants,Combo Meal at McDonald's (or Equivalent Fast-Food Meal),850.00,750.00,1000.00
+Restaurants,Domestic Draft Beer (0.5 Liter),550.00,200.00,750.00
+Restaurants,Imported Beer (0.33 Liter Bottle),925.00,900.00,950.00
+Restaurants,Cappuccino (Regular Size),495.00,400.00,650.00
+Restaurants,"Soft Drink (Coca-Cola or Pepsi, 0.33 Liter Bottle)",134.00,100.00,400.00
+Restaurants,Bottled Water (0.33 Liter),114.00,100.00,200.00
+Markets,"Milk (Regular, 1 Liter)",251.41,200.00,300.00
+Markets,Fresh White Bread (500 g Loaf),218.50,137.00,300.00
+Markets,White Rice (1 kg),550.00,500.00,600.00
+Markets,"Eggs (12, Large Size)",276.19,240.00,300.00
+Markets,Local Cheese (1 kg),1500.00,,
+Markets,Chicken Fillets (1 kg),1100.00,,
+Markets,Apples (1 kg),500.00,,
+Markets,Bananas (1 kg),488.46,300.00,676.91
+Markets,Tomatoes (1 kg),676.91,,
+Markets,Potatoes (1 kg),338.46,,
+Markets,Onions (1 kg),269.23,200.00,338.46
+Markets,Lettuce (1 Head),244.23,150.00,338.46
+Markets,Bottled Water (1.5 Liter),74.00,70.00,78.00
+Markets,Domestic Beer (0.5 Liter Bottle),300.00,300.00,300.00
+Markets,Imported Beer (0.33 Liter Bottle),500.00,,
+Markets,"Cigarettes (Pack of 20, Marlboro)",620.00,440.00,620.00
+Transportation,One-Way Ticket (Local Transport),250.00,210.00,380.00
+Transportation,Monthly Public Transport Pass (Regular Price),7500.00,4400.00,12180.00
+Transportation,Taxi Start (Standard Tariff),655.00,500.00,830.00
+Transportation,Taxi 1 km (Standard Tariff),260.00,186.41,320.00
+Transportation,Taxi 1 Hour Waiting (Standard Tariff),3000.00,,
+Transportation,Gasoline (1 Liter),172.07,155.00,175.70
+Transportation,Volkswagen Golf 1.5 (or Equivalent New Compact Car),3434000.00,3434000.00,3434000.00
+Transportation,Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car),2372900.00,2279200.00,2466600.00
+Utilities (Monthly),"Basic Utilities for 85 m2 Apartment (Electricity, Heating, Cooling, Water, Garbage)",53126.25,42500.00,60005.00
+Utilities (Monthly),"Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",4080.00,2500.00,4080.00
+Utilities (Monthly),"Broadband Internet (Unlimited Data, 60 Mbps or Higher)",7500.00,4000.00,10000.00
+Sports And Leisure,Monthly Fitness Club Membership,7800.00,7600.00,8000.00
+Sports And Leisure,"Tennis Court Rental (1 Hour, Weekend)",1650.00,500.00,2800.00
+Sports And Leisure,Cinema Ticket (International Release),1900.00,1800.00,2000.00
+Childcare,"Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",39800.00,,
+Childcare,"International Primary School, Annual Tuition per Child",1600000.00,,
+Clothing And Shoes,Jeans (Levi's 501 or Similar),6000.00,4000.00,8000.00
+Clothing And Shoes,Summer Dress in a Chain Store (e.g. Zara or H&M),3995.00,2990.00,5000.00
+Clothing And Shoes,Nike Running Shoes (Mid-Range),7500.00,,
+Clothing And Shoes,Men's Leather Business Shoes,18333.33,12000.00,30000.00
+Rent Per Month,1 Bedroom Apartment in City Centre,72000.00,60000.00,90000.00
+Rent Per Month,1 Bedroom Apartment Outside of City Centre,44000.00,40000.00,52000.00
+Rent Per Month,3 Bedroom Apartment in City Centre,130000.00,,
+Rent Per Month,3 Bedroom Apartment Outside of City Centre,100000.00,,
+Buy Apartment Price,Price per Square Meter to Buy Apartment in City Centre,350000.00,,
+Buy Apartment Price,Price per Square Meter to Buy Apartment Outside of Centre,250000.00,,
+Salaries And Financing,Average Monthly Net Salary (After Tax),253718.66,,
+Salaries And Financing,"Annual Mortgage Interest Rate (20-Year Fixed, in %)",2.08,1.30,2.82

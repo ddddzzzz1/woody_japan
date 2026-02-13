@@ -1,0 +1,56 @@
+Category,Item,Price (JPY),Range Low (JPY),Range High (JPY)
+Restaurants,Meal at an Inexpensive Restaurant,1250.00,800.00,2000.00
+Restaurants,"Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",5000.00,4000.00,10000.00
+Restaurants,Combo Meal at McDonald's (or Equivalent Fast-Food Meal),800.00,800.00,900.00
+Restaurants,Domestic Draft Beer (0.5 Liter),500.00,250.00,700.00
+Restaurants,Imported Beer (0.33 Liter Bottle),375.00,300.00,600.00
+Restaurants,Cappuccino (Regular Size),400.00,300.00,540.00
+Restaurants,"Soft Drink (Coca-Cola or Pepsi, 0.33 Liter Bottle)",166.00,120.00,300.00
+Restaurants,Bottled Water (0.33 Liter),116.00,100.00,200.00
+Markets,"Milk (Regular, 1 Liter)",238.33,220.00,250.00
+Markets,Fresh White Bread (500 g Loaf),198.00,118.00,400.00
+Markets,White Rice (1 kg),587.50,400.00,2000.00
+Markets,"Eggs (12, Large Size)",342.00,240.00,396.00
+Markets,Local Cheese (1 kg),2500.00,2000.00,3000.00
+Markets,Chicken Fillets (1 kg),1025.00,680.00,2000.00
+Markets,Beef Round or Equivalent Back Leg Red Meat (1 kg),4650.00,1580.00,10000.00
+Markets,Apples (1 kg),1300.00,400.00,2000.00
+Markets,Bananas (1 kg),466.67,300.00,600.00
+Markets,Oranges (1 kg),700.00,400.00,1000.00
+Markets,Tomatoes (1 kg),1066.67,400.00,2000.00
+Markets,Potatoes (1 kg),566.67,250.00,800.00
+Markets,Onions (1 kg),575.00,60.00,1000.00
+Markets,Lettuce (1 Head),182.50,98.00,400.00
+Markets,Bottled Water (1.5 Liter),144.00,98.00,500.00
+Markets,Bottle of Wine (Mid-Range),1500.00,1000.00,3500.00
+Markets,Domestic Beer (0.5 Liter Bottle),405.98,200.00,500.00
+Markets,Imported Beer (0.33 Liter Bottle),336.00,158.00,450.00
+Markets,"Cigarettes (Pack of 20, Marlboro)",620.00,620.00,1100.00
+Transportation,One-Way Ticket (Local Transport),255.00,200.00,300.00
+Transportation,Monthly Public Transport Pass (Regular Price),10000.00,,
+Transportation,Taxi Start (Standard Tariff),500.00,450.00,660.00
+Transportation,Taxi 1 km (Standard Tariff),450.00,400.00,660.00
+Transportation,Taxi 1 Hour Waiting (Standard Tariff),2500.00,,
+Transportation,Gasoline (1 Liter),173.65,170.00,175.70
+Transportation,Volkswagen Golf 1.5 (or Equivalent New Compact Car),3434000.00,3342000.00,3434000.00
+Transportation,Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car),2407300.00,2279200.00,2450000.00
+Utilities (Monthly),"Basic Utilities for 85 m2 Apartment (Electricity, Heating, Cooling, Water, Garbage)",18333.33,10000.00,30000.00
+Utilities (Monthly),"Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",3710.00,2000.00,4080.00
+Utilities (Monthly),"Broadband Internet (Unlimited Data, 60 Mbps or Higher)",4925.00,4200.00,5500.00
+Sports And Leisure,Monthly Fitness Club Membership,8066.67,7200.00,9000.00
+Sports And Leisure,"Tennis Court Rental (1 Hour, Weekend)",2166.67,0.00,5000.00
+Sports And Leisure,Cinema Ticket (International Release),1800.00,1800.00,3000.00
+Childcare,"Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",90532.74,89880.97,90750.00
+Childcare,"International Primary School, Annual Tuition per Child",2325333.33,1200000.00,3276000.00
+Clothing And Shoes,Jeans (Levi's 501 or Similar),7360.00,1200.00,15000.00
+Clothing And Shoes,Summer Dress in a Chain Store (e.g. Zara or H&M),5666.67,1500.00,10000.00
+Clothing And Shoes,Nike Running Shoes (Mid-Range),8250.00,4000.00,15000.00
+Clothing And Shoes,Men's Leather Business Shoes,15500.00,8000.00,17000.00
+Rent Per Month,1 Bedroom Apartment in City Centre,82920.00,70000.00,120000.00
+Rent Per Month,1 Bedroom Apartment Outside of City Centre,55800.00,50000.00,60000.00
+Rent Per Month,3 Bedroom Apartment in City Centre,211333.33,154000.00,300000.00
+Rent Per Month,3 Bedroom Apartment Outside of City Centre,123333.33,100000.00,150000.00
+Buy Apartment Price,Price per Square Meter to Buy Apartment in City Centre,260000.00,,
+Buy Apartment Price,Price per Square Meter to Buy Apartment Outside of Centre,175000.00,,
+Salaries And Financing,Average Monthly Net Salary (After Tax),290146.00,,
+Salaries And Financing,"Annual Mortgage Interest Rate (20-Year Fixed, in %)",2.02,1.00,2.45

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Woody's Japan Insights</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Woody's Japan</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="living.html">Living</a></li>
+        <li><a href="language.html">Language</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="container">
+    <div class="page-header">
+      <h1>📊 Research</h1>
+      <p>일본 정부 통계(e-Stat)와 Numbeo 크라우드소싱 데이터를 기반으로 한 생활비, 임금, 물가 분석</p>
+      <span class="badge">2024 데이터 기준</span>
+    </div>
+  </div>
+
+  <!-- Section 1: 가계조사 -->
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <h2>1. 가계조사 (家計調査 2024)</h2>
+        <p>출처: e-Stat 가계조사 단신세대 &amp; 2인 이상 세대</p>
+
+        <h3>1인 가구 (単身世帯) — 월 소비지출 169,547엔</h3>
+        <p>평균 연령 58.7세 (근로자 43.5세, 무직 75.2세) | 엥겔 계수 25.9%</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>카테고리</th>
+                <th class="num">월평균 (엔)</th>
+                <th class="num">비중</th>
+                <th class="num">전년 대비</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>식료 (食料)</td><td class="num">43,941</td><td class="num">25.9%</td><td class="num">+0.2%</td></tr>
+              <tr><td>주거 (住居)</td><td class="num">23,372</td><td class="num">13.8%</td><td class="num">-3.6%</td></tr>
+              <tr><td>교통/통신 (交通・通信)</td><td class="num">20,418</td><td class="num">12.0%</td><td class="num">-7.2%</td></tr>
+              <tr><td>교양/오락 (教養娯楽)</td><td class="num">19,519</td><td class="num">11.5%</td><td class="num">-1.4%</td></tr>
+              <tr><td>광열수도 (光熱・水道)</td><td class="num">12,816</td><td class="num">7.6%</td><td class="num">-5.6%</td></tr>
+              <tr><td>보건의료 (保健医療)</td><td class="num">8,501</td><td class="num">5.0%</td><td class="num">—</td></tr>
+              <tr><td>가구/가사용품</td><td class="num">5,937</td><td class="num">3.5%</td><td class="num">—</td></tr>
+              <tr><td>의류/신발 (被服及び履物)</td><td class="num">5,175</td><td class="num">3.1%</td><td class="num">—</td></tr>
+              <tr><td>교육 (教育)</td><td class="num">9</td><td class="num">0.0%</td><td class="num">—</td></tr>
+              <tr><td>기타 (その他)</td><td class="num">29,859</td><td class="num">17.6%</td><td class="num">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="chart-single-expense"></canvas>
+        </div>
+
+        <div class="insight">
+          <strong>근로자 1인 가구 수입:</strong> 실수입 370,247엔/월 (실질 +0.2%) — 근로소득 347,405엔 (급여 283,068엔 + 상여 60,634엔)
+        </div>
+
+        <h3>2인 이상 가구 (二人以上の世帯) — 월 소비지출 300,243엔</h3>
+        <p>평균 가구원 2.88명 | 세대주 평균 연령 60.4세 | 엥겔 계수 28.3%</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>카테고리</th>
+                <th class="num">월평균 (엔)</th>
+                <th class="num">비중</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>식료 (食料)</td><td class="num">85,040</td><td class="num">28.3%</td></tr>
+              <tr><td>기타 (その他)</td><td class="num">54,132</td><td class="num">18.0%</td></tr>
+              <tr><td>교통/통신 (交通・通信)</td><td class="num">41,588</td><td class="num">13.9%</td></tr>
+              <tr><td>교양/오락 (教養娯楽)</td><td class="num">29,098</td><td class="num">9.7%</td></tr>
+              <tr><td>광열수도 (光熱・水道)</td><td class="num">23,110</td><td class="num">7.7%</td></tr>
+              <tr><td>주거 (住居)</td><td class="num">18,088</td><td class="num">6.0%</td></tr>
+              <tr><td>보건의료 (保健医療)</td><td class="num">15,478</td><td class="num">5.2%</td></tr>
+              <tr><td>가구/가사용품</td><td class="num">12,564</td><td class="num">4.2%</td></tr>
+              <tr><td>의류/신발</td><td class="num">11,131</td><td class="num">3.7%</td></tr>
+              <tr><td>교육 (教育)</td><td class="num">10,498</td><td class="num">3.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="insight">
+          <strong>근로자 2인 이상 가구:</strong> 실수입 636,155엔/월, 소비지출 325,137엔/월
+        </div>
+
+        <div class="insight">
+          <strong>2025년 속보치:</strong> 2인 이상 가구 314,001엔/월 (명목 +4.6%, 실질 +0.9%) — 근로자 가구 수입 653,901엔/월
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: 임금 통계 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="content-section">
+        <h2>2. 임금 통계 (2024)</h2>
+        <p>출처: 후생노동성 임금구조기본통계조사 (10인 이상 사업체, 민간)</p>
+
+        <h3>전체 평균</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>항목</th><th class="num">금액 (엔)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>월 소정내 급여 (所定内給与)</td><td class="num">330,400</td></tr>
+              <tr><td>연간 상여금</td><td class="num">954,700</td></tr>
+              <tr><td><strong>연 환산 총액</strong></td><td class="num"><strong>약 4,919,500</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>성별 격차</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>구분</th><th class="num">월급여 (엔)</th><th class="num">비율</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>남성</td><td class="num">363,100</td><td class="num">100%</td></tr>
+              <tr><td>여성</td><td class="num">275,300</td><td class="num">75.8%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>기업 규모별</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>규모</th><th class="num">월급여 (엔)</th><th class="num">연 상여금 (엔)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>대기업 (1,000명+)</td><td class="num">364,500</td><td class="num">1,271,800</td></tr>
+              <tr><td>중기업 (100~999명)</td><td class="num">323,100</td><td class="num">919,400</td></tr>
+              <tr><td>소기업 (10~99명)</td><td class="num">299,300</td><td class="num">622,900</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="chart-company-size"></canvas>
+        </div>
+
+        <div class="insight">
+          <strong>연령별 피크:</strong> 남성 55~59세 444,100엔/월, 여성 45~49세 298,000엔/월
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: 도시별 비교 -->
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <h2>3. 도시별 생활비 비교 (Numbeo)</h2>
+        <p>출처: Numbeo 크라우드소싱 데이터 (2026.2 기준)</p>
+
+        <h3>렌트 (월)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>도시</th>
+                <th class="num">1BR 시내</th>
+                <th class="num">1BR 외곽</th>
+                <th class="num">3BR 시내</th>
+                <th class="num">3BR 외곽</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>도쿄</td><td class="num">184,084</td><td class="num">101,867</td><td class="num">331,381</td><td class="num">195,095</td></tr>
+              <tr><td>오사카</td><td class="num">112,000</td><td class="num">84,000</td><td class="num">259,600</td><td class="num">126,056</td></tr>
+              <tr><td>나고야</td><td class="num">82,920</td><td class="num">55,800</td><td class="num">211,333</td><td class="num">123,333</td></tr>
+              <tr><td>후쿠오카</td><td class="num">84,278</td><td class="num">52,100</td><td class="num">166,667</td><td class="num">106,667</td></tr>
+              <tr><td>삿포로</td><td class="num">72,000</td><td class="num">44,000</td><td class="num">130,000</td><td class="num">100,000</td></tr>
+              <tr><td><strong>전국 평균</strong></td><td class="num"><strong>87,447</strong></td><td class="num"><strong>57,588</strong></td><td class="num"><strong>202,121</strong></td><td class="num"><strong>116,927</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="chart-rent-city"></canvas>
+        </div>
+
+        <h3>유틸리티 (월, 85m² 기준)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>도시</th><th class="num">기본 유틸리티</th><th class="num">인터넷</th><th class="num">모바일</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>도쿄</td><td class="num">24,795</td><td class="num">4,694</td><td class="num">3,682</td></tr>
+              <tr><td>오사카</td><td class="num">20,646</td><td class="num">4,325</td><td class="num">3,267</td></tr>
+              <tr><td>나고야</td><td class="num">18,333</td><td class="num">4,925</td><td class="num">3,710</td></tr>
+              <tr><td>후쿠오카</td><td class="num">31,286</td><td class="num">5,155</td><td class="num">3,920</td></tr>
+              <tr><td>삿포로</td><td class="num"><strong>53,126</strong></td><td class="num">7,500</td><td class="num">4,080</td></tr>
+              <tr><td><strong>전국 평균</strong></td><td class="num"><strong>24,875</strong></td><td class="num"><strong>5,171</strong></td><td class="num"><strong>3,890</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="insight">
+          <strong>삿포로 유틸리티가 전국 평균의 2.1배</strong> — 겨울 난방비 영향으로 기본 유틸리티 53,126엔
+        </div>
+
+        <h3>교통 (월정기권)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>도시</th><th class="num">월정기권 (엔)</th><th class="num">편도 1회 (엔)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>도쿄</td><td class="num">12,000</td><td class="num">210</td></tr>
+              <tr><td>나고야</td><td class="num">10,000</td><td class="num">255</td></tr>
+              <tr><td>삿포로</td><td class="num">7,500</td><td class="num">250</td></tr>
+              <tr><td>후쿠오카</td><td class="num">6,085</td><td class="num">280</td></tr>
+              <tr><td>오사카</td><td class="num">5,150</td><td class="num">240</td></tr>
+              <tr><td><strong>전국 평균</strong></td><td class="num"><strong>8,252</strong></td><td class="num"><strong>225</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>외식</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>항목</th><th class="num">도쿄</th><th class="num">오사카</th><th class="num">나고야</th><th class="num">후쿠오카</th><th class="num">삿포로</th><th class="num">전국 평균</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>저렴한 식당 1인</td><td class="num">1,175</td><td class="num">1,000</td><td class="num">1,250</td><td class="num">1,250</td><td class="num">815</td><td class="num">1,000</td></tr>
+              <tr><td>중급 레스토랑 2인</td><td class="num">6,550</td><td class="num">5,000</td><td class="num">5,000</td><td class="num">8,000</td><td class="num">4,500</td><td class="num">5,250</td></tr>
+              <tr><td>맥도날드 세트</td><td class="num">800</td><td class="num">700</td><td class="num">800</td><td class="num">850</td><td class="num">850</td><td class="num">800</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>평균 세후 월급</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>도시</th><th class="num">세후 월급 (엔)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>도쿄</td><td class="num">408,799</td></tr>
+              <tr><td>오사카</td><td class="num">324,141</td></tr>
+              <tr><td>나고야</td><td class="num">290,146</td></tr>
+              <tr><td>삿포로</td><td class="num">253,719</td></tr>
+              <tr><td>후쿠오카</td><td class="num">249,390</td></tr>
+              <tr><td><strong>전국 평균</strong></td><td class="num"><strong>311,848</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="chart-salary-city"></canvas>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: 월 예산 시뮬레이션 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="content-section">
+        <h2>4. 도시별 월 예산 시뮬레이션 (1인)</h2>
+        <p>Numbeo + e-Stat 가계조사 기반</p>
+
+        <h3>도쿄</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>카테고리</th><th class="num">절약형 (엔)</th><th class="num">여유형 (엔)</th><th>근거</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>렌트 (1BR)</td><td class="num">101,867</td><td class="num">184,084</td><td>Numbeo 외곽/중심</td></tr>
+              <tr><td>식비</td><td class="num">43,941</td><td class="num">55,000</td><td>e-Stat 1인 평균 / 외식 다수</td></tr>
+              <tr><td>유틸리티</td><td class="num">12,816</td><td class="num">24,795</td><td>e-Stat 1인 / Numbeo 85m²</td></tr>
+              <tr><td>인터넷 + 모바일</td><td class="num">5,682</td><td class="num">8,376</td><td>Numbeo MVNO / 대형</td></tr>
+              <tr><td>교통</td><td class="num">12,000</td><td class="num">12,000</td><td>Numbeo 월정기권</td></tr>
+              <tr><td>보건의료</td><td class="num">8,501</td><td class="num">8,501</td><td>e-Stat 1인 평균</td></tr>
+              <tr><td>여가/오락</td><td class="num">10,000</td><td class="num">19,519</td><td>절약 추정 / e-Stat 평균</td></tr>
+              <tr><td>기타/생활용품</td><td class="num">11,112</td><td class="num">29,859</td><td>e-Stat (가구+의류 / 기타)</td></tr>
+              <tr><td><strong>합계</strong></td><td class="num"><strong>~206,000</strong></td><td class="num"><strong>~342,000</strong></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="insight">세후 월급 대비: 절약형 <strong>50%</strong>, 여유형 <strong>84%</strong></div>
+
+        <h3>오사카</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>카테고리</th><th class="num">절약형 (엔)</th><th class="num">여유형 (엔)</th><th>근거</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>렌트 (1BR)</td><td class="num">60,000</td><td class="num">112,000</td><td>Numbeo 외곽 근사 / 중심</td></tr>
+              <tr><td>식비</td><td class="num">35,000</td><td class="num">50,000</td><td>자취 중심 / 혼합</td></tr>
+              <tr><td>유틸리티</td><td class="num">10,000</td><td class="num">20,646</td><td>절약 추정 / Numbeo 85m²</td></tr>
+              <tr><td>인터넷 + 모바일</td><td class="num">5,267</td><td class="num">7,592</td><td>Numbeo</td></tr>
+              <tr><td>교통</td><td class="num">5,150</td><td class="num">5,150</td><td>Numbeo 월정기권</td></tr>
+              <tr><td>보건의료</td><td class="num">5,000</td><td class="num">8,501</td><td>절약 추정 / e-Stat</td></tr>
+              <tr><td>여가/오락</td><td class="num">10,000</td><td class="num">19,519</td><td>절약 추정 / e-Stat</td></tr>
+              <tr><td>기타/생활용품</td><td class="num">10,000</td><td class="num">25,000</td><td>추정</td></tr>
+              <tr><td><strong>합계</strong></td><td class="num"><strong>~140,000</strong></td><td class="num"><strong>~248,000</strong></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="insight">세후 월급 대비: 절약형 <strong>43%</strong>, 여유형 <strong>77%</strong></div>
+
+        <h3>지방 도시 비교</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>항목</th><th class="num">나고야</th><th class="num">후쿠오카</th><th class="num">삿포로</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>렌트 (1BR 외곽)</td><td class="num">55,800</td><td class="num">52,100</td><td class="num">44,000</td></tr>
+              <tr><td>유틸리티</td><td class="num">18,333</td><td class="num">31,286</td><td class="num">53,126</td></tr>
+              <tr><td>교통 (월정기)</td><td class="num">10,000</td><td class="num">6,085</td><td class="num">7,500</td></tr>
+              <tr><td>세후 월급</td><td class="num">290,146</td><td class="num">249,390</td><td class="num">253,719</td></tr>
+              <tr><td><strong>월 예산 절약형</strong></td><td class="num"><strong>~140,000</strong></td><td class="num"><strong>~140,000</strong></td><td class="num"><strong>~155,000</strong></td></tr>
+              <tr><td><strong>월 예산 여유형</strong></td><td class="num"><strong>~230,000</strong></td><td class="num"><strong>~240,000</strong></td><td class="num"><strong>~260,000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="chart-budget-city"></canvas>
+        </div>
+
+        <div class="insight">
+          <strong>삿포로는 렌트 최저(44,000)</strong>이지만 유틸리티 최고(53,126)로 총액은 역전됨
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CPI -->
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <h2>5. 물가 동향 (CPI 2024)</h2>
+        <p>출처: 총무성 CPI (2020년 = 100)</p>
+
+        <h3>연간 CPI</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>카테고리</th><th class="num">2024 지수</th><th class="num">전년 대비</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>총합 (General)</strong></td><td class="num"><strong>108.5</strong></td><td class="num"><strong>+2.7%</strong></td></tr>
+              <tr><td>총합 (생선식품 제외)</td><td class="num">107.9</td><td class="num">+2.6%</td></tr>
+              <tr><td>총합 (Core Core)</td><td class="num">107.0</td><td class="num">+2.4%</td></tr>
+              <tr><td>식료</td><td class="num">—</td><td class="num">+4.3%</td></tr>
+              <tr><td>생선식품</td><td class="num">—</td><td class="num">+7.0%</td></tr>
+              <tr><td>에너지</td><td class="num">—</td><td class="num">+3.8%</td></tr>
+              <tr><td>주거</td><td class="num">—</td><td class="num">+0.5%</td></tr>
+              <tr><td>교육</td><td class="num">—</td><td class="num">-0.4%</td></tr>
+              <tr><td>교양/오락</td><td class="num">—</td><td class="num">+5.4%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>2024년 월별 추이</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>월</th><th class="num">전년 대비</th><th>특기사항</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1월</td><td class="num">+2.2%</td><td>에너지 보조금 효과</td></tr>
+              <tr><td>4월</td><td class="num">+2.5%</td><td></td></tr>
+              <tr><td>7~8월</td><td class="num">~+2.8%</td><td>에너지 보조금 종료 (에너지 +12.0%)</td></tr>
+              <tr><td>12월</td><td class="num">+3.6%</td><td>연말 가속</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>급등 품목 (2024)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>품목</th><th class="num">전년 대비</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>과일</td><td class="num">+10.7%</td></tr>
+              <tr><td>채소</td><td class="num">+8.6%</td></tr>
+              <tr><td>곡류</td><td class="num">+8.5%</td></tr>
+              <tr><td>전기요금</td><td class="num">+7.4%</td></tr>
+              <tr><td>생선식품 전체</td><td class="num">+7.0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="chart-cpi"></canvas>
+        </div>
+
+        <div class="insight">
+          2024년 CPI +2.7%로 2023년(+3.2%) 대비 소폭 둔화. <strong>식료품이 여전히 인플레이션 주도.</strong> 교육만 유일하게 마이너스(-0.4%).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: 핵심 인사이트 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="content-section">
+        <h2>6. 핵심 인사이트</h2>
+
+        <h3>생활비</h3>
+        <div class="insight"><strong>도쿄 1인 최소 생활비 ~20만엔</strong> — 세후 월급(40.9만엔) 대비 약 50%</div>
+        <div class="insight"><strong>오사카 1인 최소 ~14만엔</strong> — 세후 월급(32.4만엔) 대비 약 43%. 가성비 최고</div>
+        <div class="insight"><strong>삿포로 함정</strong> — 렌트 최저(4.4만)이지만 유틸리티(5.3만)로 총비용은 나고야/후쿠오카와 비슷</div>
+        <div class="insight"><strong>식비는 합리적</strong> — 자취 중심 월 3~4.4만엔. 도시 간 차이 크지 않음</div>
+
+        <h3>수입 vs 지출</h3>
+        <div class="insight"><strong>1인 소비지출(16.9만) vs 근로자 실수입(37만)</strong> — 저축 여력 약 54%</div>
+        <div class="insight"><strong>대기업 vs 소기업 격차</strong> — 월급 차이 6.5만엔 + 상여금 차이 65만엔/년</div>
+        <div class="insight"><strong>성별 임금 격차</strong> — 여성은 남성의 75.8%</div>
+
+        <h3>물가 트렌드</h3>
+        <div class="insight"><strong>인플레이션 지속 중</strong> — 2024년 +2.7%, 특히 식료품(+4.3%), 생선식품(+7.0%)</div>
+        <div class="insight"><strong>에너지 변동 큼</strong> — 보조금 유무에 따라 -12%~+12% 스윙</div>
+        <div class="insight"><strong>교육비 하락</strong> — 고교 무상화 정책으로 유일한 디플레이션 카테고리</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <h2>출처 (Sources)</h2>
+
+        <h3>정부 공식 통계</h3>
+        <div class="source-list">
+          <div class="source-item">
+            <strong>e-Stat 가계조사 (家計調査) 2024</strong>
+            <p>총무성 통계국 — 1인 가구 및 2인 이상 가구 소비지출, 수입<br>
+            <a href="https://www.e-stat.go.jp/en" target="_blank" rel="noopener">https://www.e-stat.go.jp</a>
+            — 파일: <code>kakei_single_table01</code>, <code>kakei_multi_table01</code></p>
+          </div>
+          <div class="source-item">
+            <strong>임금구조기본통계조사 (賃金構造基本統計調査) 2024</strong>
+            <p>후생노동성 — 성별, 연령, 기업 규모별 임금 데이터<br>
+            <a href="https://www.mhlw.go.jp/english/" target="_blank" rel="noopener">https://www.mhlw.go.jp</a>
+            — 파일: <code>chingin_general_*</code></p>
+          </div>
+          <div class="source-item">
+            <strong>소비자물가지수 (CPI) 2024</strong>
+            <p>총무성 통계국 — 2020년 기준(=100), 전국/도쿄 품목별 지수<br>
+            <a href="https://www.stat.go.jp/english/" target="_blank" rel="noopener">https://www.stat.go.jp</a>
+            — 파일: <code>cpi_2024_subgroup_*</code>, <code>cpi_2024_goods_services_*</code></p>
+          </div>
+        </div>
+
+        <h3>크라우드소싱 / 국제 데이터</h3>
+        <div class="source-list">
+          <div class="source-item">
+            <strong>Numbeo Cost of Living (2026.2)</strong>
+            <p>329명 기여자, 2,656건 데이터 기반 — 도시별 렌트, 유틸리티, 외식, 교통, 세후 월급<br>
+            <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=Japan" target="_blank" rel="noopener">https://www.numbeo.com</a>
+            — 파일: <code>all_cities_comparison.csv</code>, 도시별 CSV</p>
+          </div>
+        </div>
+
+        <h3>데이터 참고 사항</h3>
+        <div class="insight">
+          <strong>e-Stat (정부 통계)</strong>는 표본조사 기반으로 전국 평균을 대표. 가계조사의 경우 표본 연령이 높아(1인 가구 58.7세) 젊은 근로자의 실제 지출 패턴과 다를 수 있음.
+          <strong>Numbeo</strong>는 크라우드소싱 특성상 주로 외국인/도시 거주자 응답에 편향될 수 있으나, 도시 간 상대 비교에는 유용.
+          월 예산 시뮬레이션은 두 소스를 교차 검증하여 산출한 추정치.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Woody's Japan Insights &mdash; Data sourced from e-Stat, Numbeo, and official Japanese government statistics.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+</html>
